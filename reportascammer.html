@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Scammer</title>
+    <link rel="stylesheet" href="combine-style.css?v=?php echo filemtime('combine-style.css'); ?>">
+</head>
+<style>
+     body{
+         background-image: url("backgroundimg.jpg");
+        background:cover;
+        overflow-y: hidden;
+     }
+
+     html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+</style>
+<body>
+  
+  <div class="container">
+    <h1>Report a Scammer</h1>
+    
+    <form action="https://www.scamaware.site/report-process.php" method="post">
+      <div>
+        <input type="text" id="scammerName" name="scammerName" placeholder="Scammer's Username" required>
+      </div>
+      <div>
+        <input type="url" id="scamLink" name="scamLink" placeholder="Link to scam page" required>
+      </div>
+      <div>
+        <input type="text" id="scamType" name="scamType" placeholder="Type of scam (e.g. tech, wood etc)" required>
+      </div>
+      <div>
+        <button type="submit">Report</button>
+      </div>
+
+      <div class="links">
+
+ <a href="https://www.scamaware.site/reportterm+conditions.html">Terms and conditions</a>
+        <div> <a href="https://www.scamaware.site/home.html">Home</a></div>
+ </div>
+    </form>
+  </div>
+</body>
+</html>
